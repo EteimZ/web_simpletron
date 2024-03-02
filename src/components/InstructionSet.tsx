@@ -12,14 +12,13 @@ import {
 
 function InstructionSet() {
   return (
+      
     <>
-       <Box mt="20px" borderRadius='10px' boxShadow='base'>
-        
-        <TableContainer>
-          <Heading textAlign="center" size='md'>InstructionSet</Heading>
-        
+       <Box mt="20px">
+       <Heading textAlign="center" size='md'>InstructionSet</Heading>
+        <TableContainer  h="300px" overflowY="scroll">
           <Table variant="striped" size='sm'>
-            <Thead>
+          <Thead position="sticky" top={0} bg="white">
               <Tr>
                 <Th>Instruction</Th>
                 <Th >Description</Th>
@@ -41,6 +40,11 @@ function InstructionSet() {
                 <Td>LOAD</Td>
                 <Td>Load a word from a specific location in memory into the accumulator</Td>
                 <Td isNumeric>20</Td>
+              </Tr>
+              <Tr>
+                <Td>Store</Td>
+                <Td>Store a word from the accumulator into a specific location in memory</Td>
+                <Td isNumeric>21</Td>
               </Tr>
               <Tr>
                 <Td>ADD</Td>
