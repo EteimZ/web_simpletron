@@ -42,7 +42,7 @@ function InstructionSet() {
                 <Td isNumeric>20</Td>
               </Tr>
               <Tr>
-                <Td>Store</Td>
+                <Td>STORE</Td>
                 <Td>Store a word from the accumulator into a specific location in memory</Td>
                 <Td isNumeric>21</Td>
               </Tr>
