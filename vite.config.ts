@@ -9,7 +9,7 @@ if (process.env.MIGHTYMELD) {
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/web_simpletron/'
+  base: '/web_simpletron/',
   plugins: [
     react({
       babel: {
